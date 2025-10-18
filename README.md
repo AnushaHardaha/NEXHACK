@@ -1,8 +1,8 @@
-# HackShastra 🚀
+# Cryptera 🚀
 
 <div align="center">
 
-![HackShastra Logo](https://img.shields.io/badge/HackShastra-2025-brightgreen.svg)
+![Cryptera Logo](https://img.shields.io/badge/Cryptera-2025-brightgreen.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -10,7 +10,7 @@
 
 **An innovative solution developed for hackathon competitions and cybersecurity challenges**
 
-[Demo](https://your-demo-link.com) • [Documentation](#documentation) • [Installation](#installation) • [Contributing](#contributing) • [Report Bug](https://github.com/AnushaHardaha/HackShastra/issues) • [Request Feature](https://github.com/AnushaHardaha/HackShastra/issues)
+[Demo](https://your-demo-link.com) • [Documentation](#documentation) • [Installation](#installation) • [Contributing](#contributing) • [Report Bug](https://github.com/AnushaHardaha/Cryptera/issues) • [Request Feature](https://github.com/AnushaHardaha/Cryptera/issues)
 
 </div>
 
@@ -40,11 +40,11 @@
 
 ## 🌟 Overview
 
-HackShastra is a comprehensive platform designed to address modern cybersecurity challenges and provide innovative solutions for hackathon competitions. Built with scalability and security in mind, this project demonstrates cutting-edge development practices and real-world problem-solving capabilities.
+Cryptera is a comprehensive platform designed to address modern cybersecurity challenges and provide innovative solutions for hackathon competitions. Built with scalability and security in mind, this project demonstrates cutting-edge development practices and real-world problem-solving capabilities.
 
 ### 🎯 Problem Statement
 
-In today's rapidly evolving digital landscape, cybersecurity threats are becoming increasingly sophisticated. Traditional security measures often fall short in protecting against advanced persistent threats, zero-day exploits, and social engineering attacks. HackShastra addresses these challenges by providing:
+In today's rapidly evolving digital landscape, cybersecurity threats are becoming increasingly sophisticated. Traditional security measures often fall short in protecting against advanced persistent threats, zero-day exploits, and social engineering attacks. Cryptera addresses these challenges by providing:
 
 - **Real-time threat detection and analysis**
 - **Automated vulnerability assessment**
@@ -231,8 +231,8 @@ Recommended:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/AnushaHardaha/HackShastra.git
-   cd HackShastra
+   git clone https://github.com/AnushaHardaha/Cryptera.git
+   cd Cryptera
    ```
 
 2. **Environment Setup**
@@ -338,7 +338,7 @@ PORT=8000
 FRONTEND_URL=http://localhost:3000
 
 # Database
-DATABASE_URL=postgresql://username:password@localhost:5432/hackshastra
+DATABASE_URL=postgresql://username:password@localhost:5432/cryptera
 REDIS_URL=redis://localhost:6379
 
 # Authentication
@@ -356,7 +356,7 @@ SMTP_PASS=your-app-password
 AWS_ACCESS_KEY_ID=your-aws-access-key
 AWS_SECRET_ACCESS_KEY=your-aws-secret-key
 AWS_REGION=us-east-1
-S3_BUCKET_NAME=hackshastra-uploads
+S3_BUCKET_NAME=cryptera-uploads
 
 # Machine Learning
 ML_MODEL_PATH=./models/
@@ -394,7 +394,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/hackshastra
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/cryptera
       - REDIS_URL=redis://redis:6379
     depends_on:
       - postgres
@@ -403,7 +403,7 @@ services:
   postgres:
     image: postgres:14-alpine
     environment:
-      POSTGRES_DB: hackshastra
+      POSTGRES_DB: cryptera
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
     volumes:
@@ -507,7 +507,7 @@ if threat_score > 0.8:
 ### Command Line Interface
 
 ```bash
-# HackShastra CLI Commands
+# Cryptera CLI Commands
 
 # Start threat monitoring
 npm run monitor
@@ -808,7 +808,7 @@ describe('Auth API', () => {
 2. **Monitor deployment**
    ```bash
    # View logs
-   kubectl logs -f deployment/hackshastra-backend
+   kubectl logs -f deployment/cryptera-backend
    
    # Check service endpoints
    kubectl get endpoints
@@ -821,7 +821,7 @@ describe('Auth API', () => {
 NODE_ENV=production
 LOG_LEVEL=warn
 REDIS_URL=redis://redis-cluster:6379
-DATABASE_URL=postgresql://username:password@db-cluster:5432/hackshastra_prod
+DATABASE_URL=postgresql://username:password@db-cluster:5432/cryptera_prod
 SENTRY_DSN=https://your-production-sentry-dsn
 ```
 
@@ -834,10 +834,10 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: 'hackshastra-backend'
+  - job_name: 'cryptera-backend'
     static_configs:
       - targets: ['backend:8000']
-  - job_name: 'hackshastra-ml'
+  - job_name: 'cryptera-ml'
     static_configs:
       - targets: ['ml-service:5000']
 ```
@@ -902,14 +902,14 @@ We welcome contributions from the community! Please follow these guidelines:
 1. **Fork the repository**
    ```bash
    # Fork on GitHub, then clone your fork
-   git clone https://github.com/YOUR-USERNAME/HackShastra.git
-   cd HackShastra
+   git clone https://github.com/YOUR-USERNAME/Cryptera.git
+   cd Cryptera
    ```
 
 2. **Set up development environment**
    ```bash
    # Add upstream remote
-   git remote add upstream https://github.com/AnushaHardaha/HackShastra.git
+   git remote add upstream https://github.com/AnushaHardaha/Cryptera.git
    
    # Install dependencies
    npm install
@@ -1105,7 +1105,7 @@ Enable debug mode for detailed logging:
 ```env
 NODE_ENV=development
 LOG_LEVEL=debug
-DEBUG=hackshastra:*
+DEBUG=cryptera:*
 ```
 
 ### Health Checks
@@ -1163,7 +1163,7 @@ Summary report @ 14:23:45(+0530) 2024-01-15
 ### [1.0.0] - 2024-01-15
 
 #### Added
-- Initial release of HackShastra
+- Initial release of Cryptera
 - Real-time threat detection system
 - Machine learning-based analysis engine
 - Comprehensive dashboard interface
@@ -1221,6 +1221,4 @@ SOFTWARE.
 ```
 
 ---
-
-#   N E X H A C K  
  
